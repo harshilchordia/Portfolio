@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Portfolio website for Harshil Chordia
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
