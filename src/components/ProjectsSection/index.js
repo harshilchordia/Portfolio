@@ -11,8 +11,9 @@ import {
 	Subtitle,
 	ImgWrap,
 	Img,
+	BtnWrap,
 } from "./ProjectsElements";
-
+import { Button } from "../ButtonElement";
 const ProjectsSection = ({
 	lightBg,
 	id,
@@ -20,10 +21,12 @@ const ProjectsSection = ({
 	topLine,
 	headline,
 	lightText,
-	darkText,
+	buttonLabel,
 	description,
 	img,
 	alt,
+	primary,
+	dark,
 }) => {
 	return (
 		<>
@@ -35,6 +38,20 @@ const ProjectsSection = ({
 								<TopLine>{topLine}</TopLine>
 								<Heading lightText={lightText}>{headline}</Heading>
 								<Subtitle lightText={lightText}>{description}</Subtitle>
+								<BtnWrap>
+									<Button
+										to="home"
+										smooth={true}
+										duration={500}
+										spy={true}
+										exact="true"
+										offset={-80}
+										primary={primary ? 1 : 0}
+										dark={dark ? 1 : 0}
+									>
+										{buttonLabel}
+									</Button>
+								</BtnWrap>
 							</TextWrapper>
 						</Column1>
 						<Column2>

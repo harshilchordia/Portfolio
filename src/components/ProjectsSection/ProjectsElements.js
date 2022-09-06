@@ -80,6 +80,11 @@ export const Subtitle = styled.p`
 	color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
 `;
 
+export const BtnWrap = styled.div`
+	display: flex;
+	justify-content: flex-start;
+`;
+
 export const ImgWrap = styled.div`
 	max-width: 555px;
 	height: 100%;

@@ -1,5 +1,5 @@
 export const homeObjOne = {
-	id: "about",
+	id: "first",
 	lightBg: false,
 	lightText: true,
 	lightTextDesc: true,
@@ -7,14 +7,17 @@ export const homeObjOne = {
 	headline: "This is a website that is my portfolio.",
 	description:
 		"Description of the website goes here. This can be long and allows me to add more stuff.",
-	// buttonLabel:
 	imgStart: true,
 	img: require("../../Images/buildingwebsite.svg").default,
 	alt: "alternate",
+	buttonLabel: "Get Starting",
+	dark: true,
+	primary: true,
+	darkText: false,
 };
 
 export const homeObjTwo = {
-	id: "about",
+	id: "second",
 	lightBg: true,
 	lightText: false,
 	lightTextDesc: false,
@@ -22,14 +25,18 @@ export const homeObjTwo = {
 	headline: "This is a website that is my portfolio.",
 	description:
 		"Description of the website goes here. This can be long and allows me to add more stuff.",
-	// buttonLabel:
+
 	imgStart: false,
 	img: require("../../Images/buildingwebsite.svg").default,
 	alt: "alternate",
+	buttonLabel: "Get Starting",
+	dark: false,
+	primary: true,
+	darkText: true,
 };
 
 export const homeObjThree = {
-	id: "about",
+	id: "third",
 	lightBg: false,
 	lightText: true,
 	lightTextDesc: true,
@@ -37,8 +44,11 @@ export const homeObjThree = {
 	headline: "This is a website that is my portfolio.",
 	description:
 		"Description of the website goes here. This can be long and allows me to add more stuff.",
-	// buttonLabel:
 	imgStart: true,
 	img: require("../../Images/buildingwebsite.svg").default,
 	alt: "alternate",
+	buttonLabel: "Get Starting",
+	dark: true,
+	primary: true,
+	darkText: false,
 };
