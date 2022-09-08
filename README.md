@@ -1,4 +1,4 @@
-# Portfolio Website for Harshil Chordia
+# Portfolio Website
 
 In the project directory, you can run:
 
