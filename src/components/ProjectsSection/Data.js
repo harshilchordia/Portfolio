@@ -21,7 +21,7 @@ export const homeObjTwo = {
 	lightBg: true,
 	lightText: false,
 	lightTextDesc: false,
-	topLine: "First DAta",
+	topLine: "Second DAta",
 	headline: "This is a website that is my portfolio.",
 	description:
 		"Description of the website goes here. This can be long and allows me to add more stuff.",
@@ -40,7 +40,7 @@ export const homeObjThree = {
 	lightBg: false,
 	lightText: true,
 	lightTextDesc: true,
-	topLine: "First DAta",
+	topLine: "Third DAta",
 	headline: "This is a website that is my portfolio.",
 	description:
 		"Description of the website goes here. This can be long and allows me to add more stuff.",

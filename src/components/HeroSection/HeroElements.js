@@ -1,14 +1,23 @@
 import styled from "styled-components";
+import Colors from "../../colors";
 
 export const HeroContainer = styled.div`
-	background: #0c0c0c;
+	background: ${Colors.background};
 	display: flex;
-	justify-content: center;
+	justify-content: left;
 	align-items: center;
-	padding: 0 30px;
-	height: 800px;
+	padding: 0 200px;
+	height: 860px;
 	position: relative;
 	z-index: 1;
+	/* border: 4px solid red; */
+	@media screen and (max-width: 768px) {
+		padding: 80px;
+	}
+
+	@media screen and (max-width: 480px) {
+		padding: 20px;
+	}
 `;
 
 export const HeroContent = styled.div`
@@ -18,42 +27,52 @@ export const HeroContent = styled.div`
 	padding: 8px 24px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: left;
+	margin-bottom: 190px;
+	/* border: 4px solid yellow; */
 `;
 
 export const HeroH1 = styled.h1`
-	color: #fff;
-	font-size: 48px;
-	text-align: center;
+	color: ${Colors.font_1};
+	font-size: 35px;
+	transform-style: preserve-3d;
+	animation: fadeIn 1s forwards;
+	animation-delay: 1s;
+	font-family: "Coolvetica Rg";
+	letter-spacing: 2.5px;
 
 	@media screen and (max-width: 768px) {
-		font-size: 40px;
+		font-size: 30px;
 	}
 
 	@media screen and (max-width: 480px) {
-		font-size: 32px;
+		font-size: 25px;
 	}
 `;
 
 export const HeroP = styled.p`
-	margin-top: 24px;
-	color: #fff;
-	font-size: 24px;
-	text-align: center;
-	max-width: 600px;
+	color: ${Colors.font_2};
+	margin-top: 12px;
+	font-size: 15px;
+	font-weight: 100;
+	/* max-width: 600px; */
+	animation: fadeIn 4s 1.4s backwards;
+	letter-spacing: 3px;
 
 	@media screen and (max-width: 768px) {
-		font-size: 24px;
+		font-size: 15px;
 	}
 
 	@media screen and (max-width: 480px) {
-		font-size: 18px;
+		font-size: 12px;
 	}
 `;
 
 export const HeroBtnWrapper = styled.div`
 	margin-top: 32px;
+	max-width: 124px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	/* border: 4px solid green; */
 `;

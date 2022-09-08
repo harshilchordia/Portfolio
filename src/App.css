@@ -1,7 +1,9 @@
+@import "animate.css";
+
 * {
-	/* background-color: yellow; */
 	box-sizing: border-box;
 	margin: 0px;
 	padding: 0px;
-	font-family: "Encode Sans Expanded", sans-serif;
+	font-family: "Coolvetica Rg";
+	letter-spacing: 2px;
 }
