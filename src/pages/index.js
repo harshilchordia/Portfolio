@@ -21,6 +21,7 @@ import {
 	MoveIn,
 } from "react-scroll-motion";
 
+import Projects from "../components/Card";
 const Home = () => {
 	const [isOpen, setIsOpen] = useState(false);
 
@@ -45,7 +46,6 @@ const Home = () => {
 		// 			{/* </Animator> */}
 		// 		</ScrollPage>
 
-		// 		<Sidebar isOpen={isOpen} toggle={toggle} />
 		// 		{/* <Navbar toggle={toggle} /> */}
 		// 		{/* <HeroSection /> */}
 		// 		<ProjectsSection {...homeObjOne} />
@@ -54,9 +54,11 @@ const Home = () => {
 		// 	</ScrollContainer>
 		// </>
 		<>
+			<Sidebar isOpen={isOpen} toggle={toggle} />
 			<Navbar toggle={toggle} />
 			<HeroSection />
-			<CardsSection />
+			<Projects />
+			{/* <CardsSection /> */}
 		</>
 	);
 };

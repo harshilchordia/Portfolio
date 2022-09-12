@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import Colors from "../../colors";
+import { motion } from "framer-motion";
+
 export const CardsContainer = styled.div`
 	height: 800px;
 	display: flex;
@@ -9,10 +11,10 @@ export const CardsContainer = styled.div`
 	background: ${Colors.background};
 
 	@media screen and (max-width: 768px) {
-		height: 1100px;
+		height: 1300px;
 	}
 	@media screen and (max-width: 480px) {
-		height: 1300px;
+		height: 1500px;
 	}
 `;
 
@@ -41,10 +43,10 @@ export const Cards = styled.div`
 	flex-direction: column;
 	justify-items: flex-start;
 	align-items: center;
-	border-radius: 10px;
-	max-height: 340px;
+	/* border-radius: 10px; */
+	/* max-height: 340px; */
 	padding: 30px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+	/* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); */
 	transition: all 0.2s ease-in-out;
 
 	&:hover {
@@ -74,11 +76,14 @@ export const CardsH1 = styled.h1`
 `;
 
 export const CardsH2 = styled.h2`
+	color: ${Colors.card_font1};
 	font-size: 1rem;
 	margin-bottom: 10px;
 `;
 
 export const CardsP = styled.p`
+	color: ${Colors.font_2};
+
 	font-size: 1rem;
 	text-align: center;
 `;
