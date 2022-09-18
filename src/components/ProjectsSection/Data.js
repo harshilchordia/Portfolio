@@ -8,7 +8,7 @@ export const homeObjOne = {
 	description:
 		"Description of the website goes here. This can be long and allows me to add more stuff.",
 	imgStart: true,
-	img: require("../../Images/buildingwebsite.svg").default,
+	// img: require("../../Images/buildingwebsite.svg").default,
 	alt: "alternate",
 	buttonLabel: "Get Starting",
 	dark: true,
@@ -27,7 +27,7 @@ export const homeObjTwo = {
 		"Description of the website goes here. This can be long and allows me to add more stuff.",
 
 	imgStart: false,
-	img: require("../../Images/buildingwebsite.svg").default,
+	// img: require("../../Images/buildingwebsite.svg").default,
 	alt: "alternate",
 	buttonLabel: "Get Starting",
 	dark: false,
@@ -45,7 +45,7 @@ export const homeObjThree = {
 	description:
 		"Description of the website goes here. This can be long and allows me to add more stuff.",
 	imgStart: true,
-	img: require("../../Images/buildingwebsite.svg").default,
+	// img: require("../../Images/buildingwebsite.svg").default,
 	alt: "alternate",
 	buttonLabel: "Get Starting",
 	dark: true,

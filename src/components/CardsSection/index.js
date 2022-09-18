@@ -1,7 +1,5 @@
 import React from "react";
 import Icon1 from "../../Images/eyegazeKeyboard.png";
-import Icon2 from "../../Images/buildingwebsite.svg";
-import Icon3 from "../../Images/buildingwebsite.svg";
 import "./index.css";
 
 import {

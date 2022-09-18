@@ -12,11 +12,12 @@
 	}
 }
 .contactForm {
-	min-width: 900px;
-
+	// min-width: 900px;
+	width: 900px;
 	left: 0;
 	right: 0;
 	margin: auto;
+	padding: 20px;
 
 	// border: 2px solid yellow;
 	ul {
@@ -38,8 +39,8 @@
 		}
 
 		li.half {
-			width: 49%;
-			margin-left: 2%;
+			width: 49.5%;
+			margin-left: 1%;
 			float: left;
 			clear: none;
 

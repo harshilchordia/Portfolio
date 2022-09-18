@@ -2,5 +2,10 @@
 	img {
 		padding: 20px;
 		width: 100px;
+		animation: fadeIn 2s 2s backwards;
+
+		&:hover {
+			scale: 1.1;
+		}
 	}
 }

@@ -1,8 +1,10 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
+
 import "./index.scss";
 import { Button } from "../ButtonElement";
 
 import emailjs from "@emailjs/browser";
+import AnimatedLetters from "../AnimatedLetters";
 
 const Contact = () => {
 	const refForm = useRef();
@@ -26,11 +28,22 @@ const Contact = () => {
 				}
 			);
 	};
+
+	const [letterClass, setLetterClass] = useState("text-animate");
+	const nameArray = ["C", "o", "n", "t", "a", "c", "t", " ", "M", "e"];
+
+	useEffect(() => {
+		setTimeout(() => {
+			return setLetterClass("text-animate-hover");
+		}, 4000);
+	}, []);
 	return (
 		<>
 			<div className="contactContainer" id="contact">
 				<div className="contactForm">
-					<h1>Contact Me</h1>
+					<h1>
+						<AnimatedLetters letterClass={letterClass} strArray={nameArray} index={15} />
+					</h1>
 					<form action="" ref={refForm} onSubmit={sendEmail}>
 						<ul>
 							<li className="half">
