@@ -7,7 +7,7 @@ export const HeroContainer = styled.div`
 	justify-content: left;
 	align-items: center;
 	padding: 0 200px;
-	height: 800px;
+	min-height: calc(100vh - 80px);
 	position: relative;
 	z-index: 1;
 	/* border: 4px solid red; */
@@ -28,7 +28,7 @@ export const HeroContent = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: left;
-	margin-bottom: 190px;
+	margin-left: 2vw;
 	/* border: 4px solid yellow; */
 `;
 
@@ -40,6 +40,7 @@ export const HeroH1 = styled.h1`
 	animation-delay: 1s;
 	font-family: "Coolvetica Rg";
 	letter-spacing: 2.5px;
+	padding: 0;
 
 	@media screen and (max-width: 768px) {
 		font-size: 30px;

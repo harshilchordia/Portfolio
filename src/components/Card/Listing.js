@@ -1,5 +1,5 @@
 import React from "react";
-import "./Listing.scss";
+import "./Listing.css";
 import { motion } from "framer-motion";
 import { Heading } from "../ProjectsSection/ProjectsElements";
 

@@ -10,18 +10,6 @@
 
 html {
 	background: "#020d1b";
-}
-
-.cardWrapper {
-	text-align: center;
-	padding: 25px;
-	box-sizing: border-box;
+	height: 100%;
 	background-color: #020d1b;
-}
-
-.properties {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
 }

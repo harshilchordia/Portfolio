@@ -3,11 +3,11 @@
 	opacity: 0;
 	animation: bounceIn 1s 1s;
 	animation-fill-mode: forwards;
-	min-width: max(8px, 0.9vw);
+	min-width: max(8px, 0.7vw);
 }
 
 .text-animate-hover {
-	min-width: max(8px, 0.9vw);
+	min-width: max(8px, 0.7vw);
 	display: inline-block;
 	animation-fill-mode: both;
 	&:hover {

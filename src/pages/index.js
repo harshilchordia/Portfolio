@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
+import Contact from "../components/Contact";
 import ProjectsSection from "../components/ProjectsSection";
 import { homeObjOne, homeObjThree, homeObjTwo } from "../components/ProjectsSection/Data";
 import CardsSection from "../components/CardsSection";
@@ -58,6 +59,7 @@ const Home = () => {
 			<Navbar toggle={toggle} />
 			<HeroSection />
 			<Projects />
+			<Contact />
 			{/* <CardsSection /> */}
 		</>
 	);

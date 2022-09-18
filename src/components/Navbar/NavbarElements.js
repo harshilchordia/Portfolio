@@ -5,6 +5,7 @@ import Colors from "../../colors";
 
 export const Nav = styled.nav`
 	background: ${Colors.background};
+	opacity: 0.9;
 	height: 80px;
 	/* margin-top: -80px; */
 	display: flex;
@@ -25,9 +26,9 @@ export const NavbarContainer = styled.div`
 	justify-content: space-between;
 	height: 80px;
 	z-index: 1;
-	width: 100%;
-	padding: 0 24px;
-	max-width: 1350px;
+	width: 100vw;
+	padding: 0 5vw;
+	/* max-width: 1350px; */
 `;
 
 export const NavLogo = styled(LinkR)`

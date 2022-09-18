@@ -35,9 +35,20 @@ const HeroSection = () => {
 					<br />
 					<AnimatedLetters letterClass={letterClass} strArray={jobArray} index={22} />
 				</HeroH1>
-				<HeroP>Frontend / Backend / Everything</HeroP>
+				<HeroP>Frontend / Backend / Designer</HeroP>
 				<HeroBtnWrapper>
-					<Button to="/" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">
+					<Button
+						onMouseEnter={onHover}
+						onMouseLeave={onHover}
+						primary="true"
+						dark="true"
+						to="contact"
+						smooth={true}
+						duration={1500}
+						spy={true}
+						exact="true"
+						offset={-80}
+					>
 						Say Hello
 					</Button>
 				</HeroBtnWrapper>

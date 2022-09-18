@@ -2,8 +2,9 @@ import React from "react";
 import "./Modal.css";
 import { IoCloseCircleOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
+import { Heading } from "../ProjectsSection/ProjectsElements";
 const Modal = ({ data, close }) => {
-	const { imageUrl, price, address, description } = data;
+	const { imageUrl, Heading, address, description } = data;
 
 	const modalVariants = {
 		open: { opacity: 1, transition: { staggerChildren: 0.5, delayChildren: 0.2 } },
@@ -34,7 +35,7 @@ const Modal = ({ data, close }) => {
 			/>
 			<motion.div className="modal_info" variants={modalInfoVariants}>
 				<motion.div className="modal_row" variants={modalRowVariants}>
-					<span className="modal_price">{price}</span>
+					<span className="modal_heading">{Heading}</span>
 				</motion.div>
 				<motion.div className="modal_description-wrapper" variants={modalRowVariants}>
 					<p className="modal_description">{description}</p>

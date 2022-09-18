@@ -1,0 +1,20 @@
+.projectWrapper {
+	text-align: center;
+	padding: 25px;
+	box-sizing: border-box;
+	background-color: #020d1b;
+	color: white;
+	min-height: calc(100vh - 80px);
+}
+
+.properties {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+h1 {
+	padding: 30px;
+	top: 0;
+}
