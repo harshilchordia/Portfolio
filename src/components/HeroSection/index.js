@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./index.scss";
 import {
 	HeroContainer,
 	HeroContent,
@@ -10,6 +11,9 @@ import {
 	HeroLinks,
 } from "./HeroElements";
 import { Button } from "../ButtonElement";
+import LinkedIn from "../../Images/linkedin.png";
+import Github from "../../Images/github.png";
+import ProjectIcon from "../../Images/project.png";
 
 import AnimatedLetters from "../AnimatedLetters";
 
@@ -66,14 +70,19 @@ const HeroSection = () => {
 			</LeftBox>
 			<RightBox>
 				<HeroLinks>
-					<a className="button" href="https://github.com/harshilchordia/" target="_blank">
-						Github
+					<a className="iconLink" href="https://github.com/harshilchordia/" target="_blank">
+						<img src={Github} alt="" />
 					</a>
-					<br />
-					<br />
-					<a className="button" href="https://www.linkedin.com/in/harshilchordia/" target="_blank">
-						LinkedIn
+					<a
+						className="iconLink"
+						href="https://www.linkedin.com/in/harshilchordia/"
+						target="_blank"
+					>
+						<img src={LinkedIn} alt="" />
 					</a>
+					{/* <a className="iconLink" href="#projects">
+						<img src={ProjectIcon} alt="" />
+					</a> */}
 				</HeroLinks>
 			</RightBox>
 		</HeroContainer>

@@ -30,6 +30,7 @@ const Contact = () => {
 		<>
 			<div className="contactContainer" id="contact">
 				<div className="contactForm">
+					<h1>Contact Me</h1>
 					<form action="" ref={refForm} onSubmit={sendEmail}>
 						<ul>
 							<li className="half">
