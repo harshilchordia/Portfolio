@@ -59,7 +59,7 @@ const Home = () => {
 			<Navbar toggle={toggle} />
 			<HeroSection />
 			<Projects />
-			<Contact />
+			{/* <Contact /> */}
 			{/* <CardsSection /> */}
 		</>
 	);

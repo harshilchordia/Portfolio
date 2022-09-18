@@ -1,5 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { HeroContainer, HeroContent, HeroH1, HeroP, HeroBtnWrapper } from "./HeroElements";
+import {
+	HeroContainer,
+	HeroContent,
+	HeroH1,
+	HeroP,
+	HeroBtnWrapper,
+	LeftBox,
+	RightBox,
+	HeroLinks,
+} from "./HeroElements";
 import { Button } from "../ButtonElement";
 
 import AnimatedLetters from "../AnimatedLetters";
@@ -21,38 +30,52 @@ const HeroSection = () => {
 	};
 	return (
 		<HeroContainer id="hero">
-			<HeroContent>
-				<HeroH1>
-					<span className={letterClass}>H</span>
-					<span className={`${letterClass} _12`}>e</span>
-					<span className={`${letterClass} _12`}>y,</span>
-					<br />
-					<span className={`${letterClass} _13`}>I</span>
-					<span className={`${letterClass} _14`}>'m</span>
+			<LeftBox>
+				<HeroContent>
+					<HeroH1>
+						<span className={letterClass}>H</span>
+						<span className={`${letterClass} _12`}>e</span>
+						<span className={`${letterClass} _12`}>y,</span>
+						<br />
+						<span className={`${letterClass} _13`}>I</span>
+						<span className={`${letterClass} _14`}>'m</span>
 
-					{/* <img src={LogoH} alt="logo" /> */}
-					<AnimatedLetters letterClass={letterClass} strArray={nameArray} index={15} />
+						{/* <img src={LogoH} alt="logo" /> */}
+						<AnimatedLetters letterClass={letterClass} strArray={nameArray} index={15} />
+						<br />
+						<AnimatedLetters letterClass={letterClass} strArray={jobArray} index={22} />
+					</HeroH1>
+					<HeroP>Frontend / Backend / Designer</HeroP>
+					<HeroBtnWrapper>
+						<Button
+							onMouseEnter={onHover}
+							onMouseLeave={onHover}
+							primary="true"
+							dark="true"
+							to="contact"
+							smooth={true}
+							duration={1500}
+							spy={true}
+							exact="true"
+							offset={-80}
+						>
+							Say Hello
+						</Button>
+					</HeroBtnWrapper>
+				</HeroContent>
+			</LeftBox>
+			<RightBox>
+				<HeroLinks>
+					<a className="button" href="https://github.com/harshilchordia/" target="_blank">
+						Github
+					</a>
 					<br />
-					<AnimatedLetters letterClass={letterClass} strArray={jobArray} index={22} />
-				</HeroH1>
-				<HeroP>Frontend / Backend / Designer</HeroP>
-				<HeroBtnWrapper>
-					<Button
-						onMouseEnter={onHover}
-						onMouseLeave={onHover}
-						primary="true"
-						dark="true"
-						to="contact"
-						smooth={true}
-						duration={1500}
-						spy={true}
-						exact="true"
-						offset={-80}
-					>
-						Say Hello
-					</Button>
-				</HeroBtnWrapper>
-			</HeroContent>
+					<br />
+					<a className="button" href="https://www.linkedin.com/in/harshilchordia/" target="_blank">
+						LinkedIn
+					</a>
+				</HeroLinks>
+			</RightBox>
 		</HeroContainer>
 	);
 };

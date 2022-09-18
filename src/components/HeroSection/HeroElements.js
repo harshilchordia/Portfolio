@@ -4,34 +4,51 @@ import Colors from "../../colors";
 export const HeroContainer = styled.div`
 	background: ${Colors.background};
 	display: flex;
-	justify-content: left;
-	align-items: center;
-	padding: 0 200px;
+	flex-direction: row;
+	width: 100%;
 	min-height: calc(100vh - 80px);
-	position: relative;
-	z-index: 1;
-	/* border: 4px solid red; */
 	@media screen and (max-width: 768px) {
-		padding: 80px;
+		/* padding: 80px; */
 	}
 
 	@media screen and (max-width: 450px) {
-		padding: 20px;
+		flex-direction: column;
+		padding: 150px 0px;
+	}
+	/* border: 4px solid red; */
+`;
+export const LeftBox = styled.div`
+	/* border: 4px solid yellow; */
+	width: 50%;
+	/* margin: auto; */
+	align-items: center;
+	display: flex;
+	padding-bottom: 50px;
+	@media screen and (max-width: 450px) {
+		width: 100%;
 	}
 `;
-
-export const HeroContent = styled.div`
-	z-index: 3;
-	max-width: 1200px;
-	position: absolute;
-	padding: 8px 24px;
+export const RightBox = styled.div`
+	/* border: 4px solid green; */
+	width: 50%;
+	/* margin: auto; */
+	align-items: center;
 	display: flex;
-	flex-direction: column;
-	align-items: left;
-	margin-left: 2vw;
-	/* border: 4px solid yellow; */
+	padding-bottom: 50px;
+	@media screen and (max-width: 450px) {
+		width: 100%;
+	}
+`;
+export const HeroContent = styled.div`
+	/* border: 4px solid purple; */
+	margin: auto;
 `;
 
+export const HeroLinks = styled.div`
+	/* border: 4px solid green; */
+	margin: auto;
+	padding: 80px;
+`;
 export const HeroH1 = styled.h1`
 	color: ${Colors.font_1};
 	font-size: 35px;
