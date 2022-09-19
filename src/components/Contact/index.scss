@@ -1,3 +1,5 @@
+@import "../../colors.scss";
+
 .contactContainer {
 	display: flex;
 	align-items: center;
@@ -6,7 +8,7 @@
 	// padding: 20px;
 	// border: 4px solid red;
 	h1 {
-		color: white;
+		color: $font_1;
 		text-align: center;
 		padding: 50px;
 	}
@@ -54,10 +56,10 @@
 	input[type="email"] {
 		width: 100%;
 		border: 0;
-		background: #115173;
+		background: $form_text_bg;
 		height: 50px;
 		font-size: 16px;
-		color: #fff;
+		color: $font_1;
 		padding: 0 20px;
 		box-sizing: border-box;
 	}
@@ -65,41 +67,12 @@
 	textarea {
 		width: 100%;
 		border: 0;
-		background: #115173;
+		background: $form_text_bg;
 		height: 50px;
 		font-size: 16px;
-		color: #fff;
+		color: $font_1;
 		padding: 20px;
 		min-height: 150px;
 		box-sizing: border-box;
-	}
-}
-
-.button {
-	border-radius: 10px;
-	background: transparent;
-
-	// white-space: nowrap;
-	padding: 10px 15px;
-	font-size: 16px;
-	outline: none;
-	cursor: pointer;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	// transition: all 0.2s ease-in-out;
-
-	color: #64ffda;
-	font-weight: 500;
-	letter-spacing: 3px;
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
-		Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-	border: 1.5px solid #64ffda;
-	// animation: fadeIn 2s 2s backwards;
-	text-decoration: none;
-
-	&:hover {
-		transition: all 0.2s ease-in-out;
-		background-color: #13303f;
 	}
 }

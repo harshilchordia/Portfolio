@@ -2,7 +2,7 @@ import Card from "./Card";
 
 import React, { useState, useEffect } from "react";
 
-import "./index.css";
+import "./index.scss";
 
 import { properties } from "./data";
 import AnimatedLetters from "../AnimatedLetters";

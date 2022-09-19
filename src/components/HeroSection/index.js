@@ -1,19 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./index.scss";
-import {
-	HeroContainer,
-	HeroContent,
-	HeroH1,
-	HeroP,
-	HeroBtnWrapper,
-	LeftBox,
-	RightBox,
-	HeroLinks,
-} from "./HeroElements";
-import { Button } from "../ButtonElement";
+
+import { Link } from "react-scroll";
+
+import Button from "../Button";
 import LinkedIn from "../../Images/linkedin.png";
 import Github from "../../Images/github.png";
-import ProjectIcon from "../../Images/project.png";
 
 import AnimatedLetters from "../AnimatedLetters";
 
@@ -33,10 +25,10 @@ const HeroSection = () => {
 		setHover(!hover);
 	};
 	return (
-		<HeroContainer id="hero">
-			<LeftBox>
-				<HeroContent>
-					<HeroH1>
+		<div className="HeroContainer" id="hero">
+			<div className="LeftBox">
+				<div className="HeroContent">
+					<h1>
 						<span className={letterClass}>H</span>
 						<span className={`${letterClass} _12`}>e</span>
 						<span className={`${letterClass} _12`}>y,</span>
@@ -48,28 +40,30 @@ const HeroSection = () => {
 						<AnimatedLetters letterClass={letterClass} strArray={nameArray} index={15} />
 						<br />
 						<AnimatedLetters letterClass={letterClass} strArray={jobArray} index={22} />
-					</HeroH1>
-					<HeroP>Frontend / Backend / Designer</HeroP>
-					<HeroBtnWrapper>
-						<Button
-							onMouseEnter={onHover}
-							onMouseLeave={onHover}
-							primary="true"
-							dark="true"
-							to="contact"
-							smooth={true}
-							duration={1500}
-							spy={true}
-							exact="true"
-							offset={-80}
-						>
-							Say Hello
+					</h1>
+					<p>Frontend / Backend / Designer</p>
+					<div className="HeroBtnWrapper">
+						<Button>
+							<Link
+								onMouseEnter={onHover}
+								onMouseLeave={onHover}
+								primary="true"
+								dark="true"
+								to="contact"
+								smooth={true}
+								duration={1500}
+								spy={true}
+								exact="true"
+								offset={-80}
+							>
+								Say Hello
+							</Link>
 						</Button>
-					</HeroBtnWrapper>
-				</HeroContent>
-			</LeftBox>
-			<RightBox>
-				<HeroLinks>
+					</div>
+				</div>
+			</div>
+			<div className="RightBox">
+				<div className="HeroLinks">
 					<a className="iconLink" href="https://github.com/harshilchordia/" target="_blank">
 						<img src={Github} alt="" />
 					</a>
@@ -83,9 +77,9 @@ const HeroSection = () => {
 					{/* <a className="iconLink" href="#projects">
 						<img src={ProjectIcon} alt="" />
 					</a> */}
-				</HeroLinks>
-			</RightBox>
-		</HeroContainer>
+				</div>
+			</div>
+		</div>
 	);
 };
 

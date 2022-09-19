@@ -1,0 +1,24 @@
+@import "../../colors.scss";
+
+.button {
+	border-radius: 5px;
+	background-color: $button_bg;
+	color: $button_text;
+	// padding: "18px 36px";
+	// min-width: 110px;
+	font-size: max(14px, 0.6vmax);
+	font-weight: 500;
+	letter-spacing: 3px;
+	padding: 11px 11px;
+	margin: 0;
+	// border: 1.5px solid $button_border;
+	border: none;
+	animation: fadeIn 2s 2s backwards;
+	text-decoration: none;
+
+	&:hover {
+		background-color: $button_bg_hover;
+		color: $button_text_hover;
+		cursor: pointer;
+	}
+}

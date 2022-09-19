@@ -1,7 +1,6 @@
 import React from "react";
-import "./Listing.css";
+import "./Listing.scss";
 import { motion } from "framer-motion";
-import { Heading } from "../ProjectsSection/ProjectsElements";
 
 const Listing = ({ data, open }) => {
 	const { imageUrl, Heading, small_des } = data;

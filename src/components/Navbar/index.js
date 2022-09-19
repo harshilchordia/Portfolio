@@ -1,16 +1,10 @@
-import React, { useEffect, useState } from "react";
+import "./index.scss";
+import { Link as LinkR } from "react-router-dom";
+import { Link as LinkScroll } from "react-scroll";
+
+import React from "react";
 import { FaBars } from "react-icons/fa";
 import { animateScroll as scroll } from "react-scroll";
-import {
-	Nav,
-	NavbarContainer,
-	NavLogo,
-	MobileIcon,
-	NavMenu,
-	NavItem,
-	NavLinks,
-	NavIMG,
-} from "./NavbarElements";
 
 import h_logo from "../../Images/H_logo.png";
 
@@ -19,59 +13,66 @@ const Navbar = ({ toggle }) => {
 		scroll.scrollToTop();
 	};
 	return (
-		<>
-			<Nav>
-				<NavbarContainer>
-					<NavItem>
-						<NavLogo to="/" onClick={toggleHome}>
-							<NavIMG src={h_logo} alt="" />
-						</NavLogo>
-					</NavItem>
+		<nav className="navContainer">
+			<div className="navWrapper">
+				<li>
+					<LinkR to="/" onClick={toggleHome} className="navLogo">
+						<img src={h_logo} alt="" />
+					</LinkR>
+				</li>
 
-					<MobileIcon onClick={toggle}>
-						<FaBars />
-					</MobileIcon>
-					<NavMenu>
-						<NavItem>
-							<NavLinks
+				<div onClick={toggle} className="mobileIcon">
+					<FaBars />
+				</div>
+				<ul>
+					<li>
+						<div className="navLinks">
+							<LinkScroll
+								to="skills"
+								smooth={true}
+								duration={500}
+								spy={true}
+								exact="true"
+								offset={-80}
+								activeClass="active"
+							>
+								Skills
+							</LinkScroll>
+						</div>
+					</li>
+					<li>
+						<div className="navLinks">
+							<LinkScroll
 								to="projects"
 								smooth={true}
 								duration={500}
 								spy={true}
 								exact="true"
 								offset={-80}
+								activeClass="active"
 							>
 								Projects
-							</NavLinks>
-						</NavItem>
-						{/* <NavItem>
-							<NavLinks
-								to="second"
-								smooth={true}
-								duration={500}
-								spy={true}
-								exact="true"
-								offset={-80}
-							>
-								Discover
-							</NavLinks>
-						</NavItem> */}
-						<NavItem>
-							<NavLinks
+							</LinkScroll>
+						</div>
+					</li>
+					<li>
+						<div className="navLinks">
+							<LinkScroll
 								to="contact"
 								smooth={true}
 								duration={500}
 								spy={true}
 								exact="true"
 								offset={-80}
+								activeClass="active"
 							>
-								Contact Me
-							</NavLinks>
-						</NavItem>
-					</NavMenu>
-				</NavbarContainer>
-			</Nav>
-		</>
+								Contact
+							</LinkScroll>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
 	);
 };
 

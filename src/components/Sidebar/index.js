@@ -1,29 +1,35 @@
 import React from "react";
-import {
-	SidebarContainer,
-	Icon,
-	CloseIcon,
-	SidebarWrapper,
-	SidebarMenu,
-	SidebarLink,
-} from "./SidebarElements";
+import "./index.scss";
+
+import { FaTimes } from "react-icons/fa";
+
+import { Link as LinkS } from "react-scroll";
+
 const Sidebar = ({ isOpen, toggle }) => {
 	return (
-		<SidebarContainer isOpen={isOpen} onClick={toggle}>
-			<Icon onClick={toggle}>
-				<CloseIcon />
-			</Icon>
-			<SidebarWrapper>
-				<SidebarMenu>
-					<SidebarLink to="projects" onClick={toggle}>
-						Projects
-					</SidebarLink>
-					<SidebarLink to="contact" onClick={toggle}>
-						Contact
-					</SidebarLink>
-				</SidebarMenu>
-			</SidebarWrapper>
-		</SidebarContainer>
+		<>
+			<aside
+				className={isOpen ? "sidebarContainer open" : "sidebarContainer closed"}
+				onClick={toggle}
+			>
+				<div className="icon" onClick={toggle}>
+					<FaTimes className="closeIcon" />
+				</div>
+				<div className="sidebarWrapper">
+					<ul>
+						<LinkS className="sidebarLinks" to="skills" onClick={toggle}>
+							Skills
+						</LinkS>
+						<LinkS className="sidebarLinks" to="projects" onClick={toggle}>
+							Projects
+						</LinkS>
+						<LinkS className="sidebarLinks" to="contact" onClick={toggle}>
+							Contact
+						</LinkS>
+					</ul>
+				</div>
+			</aside>
+		</>
 	);
 };
 

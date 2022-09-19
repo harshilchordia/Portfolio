@@ -1,0 +1,67 @@
+@import "../../colors.scss";
+
+.sidebarContainer {
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	background: $navbag_bg;
+	display: grid;
+	align-items: center;
+	top: 0;
+	left: 0;
+	transition: 0.3s ease-in-out;
+
+	.icon {
+		position: absolute;
+		top: 1.2rem;
+		right: 1.5rem;
+		background: transparent;
+		font-size: 2rem;
+		cursor: pointer;
+		outline: none;
+	}
+	// .sidebarWrapper {
+	// 	color: rgb(223, 0, 0);
+	// }
+
+	ul {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(6, 80px);
+		text-align: center;
+
+		@media screen and (max-width: 350px) {
+			grid-template-rows: repeat(6, 60px);
+		}
+	}
+
+	.sidebarLinks {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.5rem;
+		text-decoration: none;
+		list-style: none;
+		transition: 0.2s ease-in-out;
+		color: $font_1;
+		cursor: pointer;
+
+		&:hover {
+			color: $highlight;
+			transition: 0.2s ease-in-out;
+		}
+	}
+}
+
+.open {
+	opacity: 97%;
+	top: 0;
+}
+.closed {
+	opacity: 0;
+	top: -100%;
+}
+.closeIcon {
+	color: $card_close_icon;
+}

@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
+import Skills from "../components/Skills";
+
 import Contact from "../components/Contact";
-import ProjectsSection from "../components/ProjectsSection";
-import { homeObjOne, homeObjThree, homeObjTwo } from "../components/ProjectsSection/Data";
-import CardsSection from "../components/CardsSection";
+// import { homeObjOne, homeObjThree, homeObjTwo } from "../components/ProjectsSection/Data";
 
 import {
 	ScrollContainer,
@@ -58,9 +58,10 @@ const Home = () => {
 			<Sidebar isOpen={isOpen} toggle={toggle} />
 			<Navbar toggle={toggle} />
 			<HeroSection />
+			<Skills />
 			<Projects />
+
 			<Contact />
-			{/* <CardsSection /> */}
 		</>
 	);
 };

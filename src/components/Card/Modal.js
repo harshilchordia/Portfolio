@@ -1,8 +1,7 @@
 import React from "react";
-import "./Modal.css";
+import "./Modal.scss";
 import { IoCloseCircleOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
-import { Heading } from "../ProjectsSection/ProjectsElements";
 const Modal = ({ data, close }) => {
 	const { imageUrl, Heading, address, description } = data;
 

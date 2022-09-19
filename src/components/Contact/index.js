@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 
 import "./index.scss";
-import { Button } from "../ButtonElement";
+import Button from "../Button";
 
 import emailjs from "@emailjs/browser";
 import AnimatedLetters from "../AnimatedLetters";
