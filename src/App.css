@@ -4,7 +4,11 @@
 	box-sizing: border-box;
 	margin: 0px;
 	padding: 0px;
-	font-family: "Coolvetica Rg";
+	/* font-family: "C"; */
+	font-family: Arial, Helvetica, sans-serif;
+	/* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva,
+		Verdana, sans-serif; */
+
 	letter-spacing: 2px;
 }
 

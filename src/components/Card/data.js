@@ -7,7 +7,8 @@ export const properties = [
 		id: 1,
 		imageUrl: wildfire,
 		Heading: "Wildfire Research",
-		small_des: "Research assistant at a wildfire research group at King's College London",
+		small_des:
+			"Worked as a research assistant at Earth Observation and Wildfire Research Group at King's College London.",
 		description: "Research assistant at a wildfire research group at King's College London",
 	},
 	{
