@@ -8,6 +8,8 @@ import { animateScroll as scroll } from "react-scroll";
 
 import h_logo from "../../Images/H_logo.png";
 
+import { HashLink } from "react-router-hash-link";
+
 const Navbar = ({ toggle }) => {
 	const toggleHome = () => {
 		scroll.scrollToTop();
@@ -57,17 +59,23 @@ const Navbar = ({ toggle }) => {
 					</li>
 					<li>
 						<div className="navLinks">
-							<LinkScroll
-								to="contact"
-								smooth={true}
-								duration={500}
-								spy={true}
-								exact="true"
-								offset={-80}
-								activeClass="active"
+							<HashLink
+								smooth
+								to="/#contact"
+								scroll={(el) => el.scrollIntoView({ behavior: "auto", block: "end" })}
 							>
-								Contact
-							</LinkScroll>
+								<LinkScroll
+									to="contact"
+									smooth={true}
+									duration={500}
+									spy={true}
+									exact="true"
+									offset={-80}
+									activeClass="active"
+								>
+									Contact
+								</LinkScroll>
+							</HashLink>
 						</div>
 					</li>
 				</ul>

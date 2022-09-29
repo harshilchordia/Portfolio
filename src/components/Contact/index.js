@@ -1,12 +1,9 @@
 import React, { useRef, useState, useEffect } from "react";
 
 import "./index.scss";
-import Button from "../Button";
 
 import emailjs from "@emailjs/browser";
 import AnimatedLetters from "../AnimatedLetters";
-
-// import ScrollableAnchor from "react-scrollable-anchor";
 
 const Contact = () => {
 	const refForm = useRef();
@@ -41,7 +38,6 @@ const Contact = () => {
 	}, []);
 	return (
 		<div className="contactContainer" id="contact">
-			{/* <ScrollableAnchor id={"contactme"}> */}
 			<div className="contactForm">
 				<h1>
 					<AnimatedLetters letterClass={letterClass} strArray={nameArray} index={15} />
@@ -66,7 +62,6 @@ const Contact = () => {
 					</ul>
 				</form>
 			</div>
-			{/* </ScrollableAnchor> */}
 		</div>
 	);
 };
