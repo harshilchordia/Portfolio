@@ -6,6 +6,8 @@ import Button from "../Button";
 import emailjs from "@emailjs/browser";
 import AnimatedLetters from "../AnimatedLetters";
 
+// import ScrollableAnchor from "react-scrollable-anchor";
+
 const Contact = () => {
 	const refForm = useRef();
 
@@ -38,34 +40,34 @@ const Contact = () => {
 		}, 4000);
 	}, []);
 	return (
-		<>
-			<div className="contactContainer" id="contact">
-				<div className="contactForm">
-					<h1>
-						<AnimatedLetters letterClass={letterClass} strArray={nameArray} index={15} />
-					</h1>
-					<form action="" ref={refForm} onSubmit={sendEmail}>
-						<ul>
-							<li className="half">
-								<input type="text" name="name" placeholder="Name" required />
-							</li>
-							<li className="half">
-								<input type="email" name="email" placeholder="Email" required />
-							</li>
-							<li>
-								<input placeholder="Subject" type="text" name="subject" required />
-							</li>
-							<li>
-								<textarea name="message" placeholder="Message" required></textarea>
-							</li>
-							<li>
-								<input type="submit" className="button" value="Send Email" />
-							</li>
-						</ul>
-					</form>
-				</div>
+		<div className="contactContainer" id="contact">
+			{/* <ScrollableAnchor id={"contactme"}> */}
+			<div className="contactForm">
+				<h1>
+					<AnimatedLetters letterClass={letterClass} strArray={nameArray} index={15} />
+				</h1>
+				<form action="" ref={refForm} onSubmit={sendEmail}>
+					<ul>
+						<li className="half">
+							<input type="text" name="name" placeholder="Name" required />
+						</li>
+						<li className="half">
+							<input type="email" name="email" placeholder="Email" required />
+						</li>
+						<li>
+							<input placeholder="Subject" type="text" name="subject" required />
+						</li>
+						<li>
+							<textarea name="message" placeholder="Message" required></textarea>
+						</li>
+						<li>
+							<input type="submit" className="button" value="Send Email" />
+						</li>
+					</ul>
+				</form>
 			</div>
-		</>
+			{/* </ScrollableAnchor> */}
+		</div>
 	);
 };
 
