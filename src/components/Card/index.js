@@ -19,7 +19,7 @@ const Projects = () => {
 	return (
 		<>
 			<div className="projectWrapper" id="projects">
-				<h1>
+				<h1 id="projectss1">
 					<AnimatedLetters letterClass={letterClass} strArray={nameArray} index={15} />
 				</h1>
 				<div className="properties">

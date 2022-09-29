@@ -2,8 +2,9 @@ import React from "react";
 import "./Modal.scss";
 import { IoCloseCircleOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
+import VideoApp from "../Video";
 const Modal = ({ data, close }) => {
-	const { imageUrl, Heading, address, description } = data;
+	const { imageSection, Heading, description } = data;
 
 	const modalVariants = {
 		open: { opacity: 1, transition: { staggerChildren: 0.5, delayChildren: 0.2 } },
@@ -26,12 +27,17 @@ const Modal = ({ data, close }) => {
 	};
 	return (
 		<motion.div className="modal" onClick={(e) => e.stopPropagation()} variants={modalVariants}>
-			<motion.img
+			{/* <motion.img
 				className="modal_image"
 				alt="Project image"
 				src={imageUrl}
 				variants={imageVariants}
-			/>
+			/> */}
+
+			{/* <motion.div className="modal_image" alt="Project Image" variants={imageVariants}> */}
+			{imageSection}
+			{/* </motion.div> */}
+
 			<motion.div className="modal_info" variants={modalInfoVariants}>
 				<motion.div className="modal_row" variants={modalRowVariants}>
 					<span className="modal_heading">{Heading}</span>

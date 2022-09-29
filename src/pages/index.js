@@ -7,22 +7,8 @@ import Skills from "../components/Skills";
 import Contact from "../components/Contact";
 // import { homeObjOne, homeObjThree, homeObjTwo } from "../components/ProjectsSection/Data";
 
-import {
-	ScrollContainer,
-	ScrollPage,
-	Animator,
-	batch,
-	Fade,
-	Sticky,
-	MoveOut,
-	StickyIn,
-	FadeIn,
-	ZoomIn,
-	FadeOut,
-	MoveIn,
-} from "react-scroll-motion";
-
 import Projects from "../components/Card";
+
 const Home = () => {
 	const [isOpen, setIsOpen] = useState(false);
 

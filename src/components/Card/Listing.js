@@ -3,12 +3,12 @@ import "./Listing.scss";
 import { motion } from "framer-motion";
 
 const Listing = ({ data, open }) => {
-	const { imageUrl, Heading, small_des } = data;
+	const { posterUrl, Heading, small_des } = data;
 	return (
 		<motion.div className="listing" onClick={open} whileHover={{ scale: 1.1 }}>
 			<div className="listing_content">
 				<div className="listing_image-container">
-					<img className="listing_image" src={imageUrl} alt="Project picture" />
+					<img className="listing_image" src={posterUrl} alt="Project picture" />
 				</div>
 				<div className="listing_details">
 					<div className="listing_row">

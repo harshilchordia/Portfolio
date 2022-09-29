@@ -2,18 +2,43 @@ import eyegazeKeyboard from "../../Images/eyegazekey.png";
 import portfolioWebsite from "../../Images/porfoliowebsite.png";
 import wildfire from "../../Images/wildfire.png";
 
+import { DefaultPlayer as Video } from "react-html5video/dist";
+import "react-html5video/dist/styles.css";
+import videofile from "../../Images/eyegazeWorking.mp4";
+
+import { motion } from "framer-motion";
+
+const imageVariants = {
+	open: { opacity: 1, y: "0vh" },
+	closed: { opacity: 0, y: "-10vhxs" },
+};
 export const properties = [
 	{
 		id: 1,
-		imageUrl: wildfire,
+		posterUrl: wildfire,
+		imageSection: (
+			<motion.img
+				className="modal_image"
+				alt="Project image"
+				src={wildfire}
+				variants={imageVariants}
+			/>
+		),
 		Heading: "Wildfire research",
 		small_des:
 			"Worked as a research assistant at Earth Observation and Wildfire Research Group at King's College London.",
 		description: "Research assistant at a wildfire research group at King's College London",
 	},
 	{
-		id: 1,
-		imageUrl: eyegazeKeyboard,
+		id: 2,
+		posterUrl: eyegazeKeyboard,
+		imageSection: (
+			<motion.div className="modal_image" alt="Project Image" variants={imageVariants}>
+				<Video>
+					<source src={videofile} type="video/mp4" />
+				</Video>
+			</motion.div>
+		),
 		Heading: "Eye gaze keyboard",
 		small_des:
 			"Eye Gaze detection keyboard allows you to type hands-free with the gaze of your eyes.\
@@ -22,8 +47,16 @@ export const properties = [
 			"Developed an application for typing with eye gaze detection as final year project. Used Machine Learning face and eye detection models along with OpenCV, Dlib, and Tkinter libraries.",
 	},
 	{
-		id: 2,
-		imageUrl: portfolioWebsite,
+		id: 3,
+		posterUrl: portfolioWebsite,
+		imageSection: (
+			<motion.img
+				className="modal_image"
+				alt="Project image"
+				src={portfolioWebsite}
+				variants={imageVariants}
+			/>
+		),
 		Heading: "Porfolio website",
 		small_des:
 			"React Framerwork responsive website used as a personal portfolio.\
