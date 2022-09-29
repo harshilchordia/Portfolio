@@ -18,6 +18,8 @@ const Home = () => {
 		setIsOpen(!isOpen);
 	};
 
+	// scroll to projects section, format= byharshil.web.app/?proj_ID=2#projects
+
 	const { hash } = useLocation();
 	const hash_id = hash.substring(1);
 
@@ -32,18 +34,6 @@ const Home = () => {
 		}, [hash_id]);
 	};
 	useScrollToTarget(hash_id);
-
-	// const useScrollToTarget = (section) => {
-	// 	useEffect(() => {
-	// 		if (section) {
-	// 			const scrollToTarget = document.getElementById(section);
-	// 			if (scrollToTarget) {
-	// 				scrollToTarget.scrollIntoView();
-	// 			}
-	// 		}
-	// 	}, [section]);
-	// };
-	// useScrollToTarget(section);
 
 	return (
 		// <>

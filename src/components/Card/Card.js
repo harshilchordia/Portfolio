@@ -29,7 +29,7 @@ const Card = ({ data }) => {
 		});
 	};
 
-	// for opening Modal by URL search param ?
+	// for opening Modal by URL search param ? format= byharshil.web.app/?proj_ID=2#projects
 	useOpenModalByID();
 
 	return (
