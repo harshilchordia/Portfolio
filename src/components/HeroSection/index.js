@@ -29,7 +29,7 @@ const HeroSection = () => {
 			<div className="LeftBox">
 				<div className="HeroContent">
 					<h1>
-						<span className={letterClass}>Hasdf</span>
+						<span className={letterClass}>H</span>
 						<span className={`${letterClass} _12`}>e</span>
 						<span className={`${letterClass} _12`}>y,</span>
 						<br />
