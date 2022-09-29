@@ -43,22 +43,23 @@ const HeroSection = () => {
 					</h1>
 					<p>Frontend / Backend / Designer</p>
 					<div className="HeroBtnWrapper">
-						<Button>
-							<Link
-								onMouseEnter={onHover}
-								onMouseLeave={onHover}
-								primary="true"
-								dark="true"
-								to="contact"
-								smooth={true}
-								duration={1500}
-								spy={true}
-								exact="true"
-								offset={-80}
-							>
-								Say Hello
-							</Link>
-						</Button>
+						{/* <Button> */}
+						<Link
+							onMouseEnter={onHover}
+							onMouseLeave={onHover}
+							primary="true"
+							dark="true"
+							to="contact"
+							smooth={true}
+							duration={1500}
+							spy={true}
+							exact="true"
+							offset={-80}
+							className="button"
+						>
+							Say Hello
+						</Link>
+						{/* </Button>  */}
 					</div>
 				</div>
 			</div>

@@ -2,7 +2,7 @@ import React from "react";
 import "./Modal.scss";
 import { IoCloseCircleOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
-import VideoApp from "../Video";
+
 const Modal = ({ data, close }) => {
 	const { imageSection, Heading, description } = data;
 

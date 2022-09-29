@@ -7,18 +7,20 @@ const Skills = () => {
 			<h1>Skills</h1>
 			<div className="table">
 				<table>
-					<tr>
-						<th>Languages</th>
-						<th>Frameworks</th>
-						<th>Tools</th>
-					</tr>
-					<tr>
-						<td>Python</td>
-						<td>React</td>
-					</tr>
-					<tr>
-						<td>Java</td>
-					</tr>
+					<tbody>
+						<tr>
+							<th>Languages</th>
+							<th>Frameworks</th>
+							<th>Tools</th>
+						</tr>
+						<tr>
+							<td>Python</td>
+							<td>React</td>
+						</tr>
+						<tr>
+							<td>Java</td>
+						</tr>
+					</tbody>
 				</table>
 			</div>
 		</div>

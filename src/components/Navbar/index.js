@@ -59,23 +59,17 @@ const Navbar = ({ toggle }) => {
 					</li>
 					<li>
 						<div className="navLinks">
-							<HashLink
-								smooth
-								to="/#contact"
-								scroll={(el) => el.scrollIntoView({ behavior: "auto", block: "end" })}
+							<LinkScroll
+								to="contact"
+								smooth={true}
+								duration={500}
+								spy={true}
+								exact="true"
+								offset={-80}
+								activeClass="active"
 							>
-								<LinkScroll
-									to="contact"
-									smooth={true}
-									duration={500}
-									spy={true}
-									exact="true"
-									offset={-80}
-									activeClass="active"
-								>
-									Contact
-								</LinkScroll>
-							</HashLink>
+								Contact
+							</LinkScroll>
 						</div>
 					</li>
 				</ul>

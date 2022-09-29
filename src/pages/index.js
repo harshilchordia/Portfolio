@@ -19,19 +19,19 @@ const Home = () => {
 	};
 
 	const { hash } = useLocation();
+	const hash_id = hash.substring(1);
 
-	const useScrollToTarget = (hash) => {
+	const useScrollToTarget = (hash_id) => {
 		useEffect(() => {
 			if (hash) {
-				const scrollToTarget = document.getElementById(hash.substring(1));
-				console.log("hash is working ", hash, scrollToTarget);
+				const scrollToTarget = document.getElementById(hash_id);
 				if (scrollToTarget) {
-					scrollToTarget.scrollIntoView();
+					scrollToTarget.scrollIntoView({ behavior: "smooth" });
 				}
 			}
-		}, [hash]);
+		}, [hash_id]);
 	};
-	useScrollToTarget(hash);
+	useScrollToTarget(hash_id);
 
 	// const useScrollToTarget = (section) => {
 	// 	useEffect(() => {
