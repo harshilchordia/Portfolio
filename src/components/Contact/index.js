@@ -42,6 +42,7 @@ const Contact = () => {
 				<h1>
 					<AnimatedLetters letterClass={letterClass} strArray={nameArray} index={15} />
 				</h1>
+
 				<form action="" ref={refForm} onSubmit={sendEmail}>
 					<ul>
 						<li className="half">
@@ -61,6 +62,10 @@ const Contact = () => {
 						</li>
 					</ul>
 				</form>
+				<p>
+					<br /> or <br /> <br />
+					<a href="mailto:harshil.chordia@gmail.com">harshil.chordia@gmail.com</a>
+				</p>
 			</div>
 		</div>
 	);

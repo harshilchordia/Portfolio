@@ -6,6 +6,9 @@ import { Link } from "react-scroll";
 import Button from "../Button";
 import LinkedIn from "../../Images/linkedin.png";
 import Github from "../../Images/github.png";
+import cvIcon from "../../Images/cv.png";
+
+import cv_location from "../../Harshil Chordia - CV.pdf";
 
 import AnimatedLetters from "../AnimatedLetters";
 
@@ -74,6 +77,9 @@ const HeroSection = () => {
 						target="_blank"
 					>
 						<img src={LinkedIn} alt="" />
+					</a>
+					<a className="iconLink" href={cv_location} target="_blank">
+						<img src={cvIcon} alt="" />
 					</a>
 					{/* <a className="iconLink" href="#projects">
 						<img src={ProjectIcon} alt="" />

@@ -10,7 +10,31 @@
 	h1 {
 		color: $font_1;
 		text-align: center;
-		padding: 50px;
+		padding: 2px;
+		margin-bottom: 30px;
+		// border: 4px solid red;
+	}
+	p {
+		color: $font_2;
+		text-align: center;
+		font-size: 15px;
+		font-weight: 100;
+		margin-bottom: 30px;
+		animation: fadeIn 4s 1.4s backwards;
+		letter-spacing: 3px;
+
+		@media screen and (max-width: 768px) {
+			font-size: 15px;
+		}
+
+		@media screen and (max-width: 480px) {
+			font-size: 12px;
+		}
+
+		a {
+			color: $font_2;
+			text-decoration: none;
+		}
 	}
 }
 .contactForm {

@@ -1,40 +1,101 @@
 @import "../../colors.scss";
 
 .skillContainer {
+	background: $background;
+	width: 100%;
 	min-height: calc(100vh - 80px);
-	padding-top: 80px;
-
+	padding-top: 100px;
+	@media screen and (max-width: 450px) {
+		flex-direction: column;
+		padding: 150px 0px;
+	}
 	h1 {
-		text-align: center;
+		color: $font_1;
+		font-size: 35px;
+		transform-style: preserve-3d;
+		animation: fadeIn 1s forwards;
+		animation-delay: 1s;
+		letter-spacing: 2.5px;
+		padding: 0;
+		text-align: left;
+		margin-left: 150px;
+		// margin-bottom: 20px;
+
+		@media screen and (max-width: 768px) {
+			font-size: 30px;
+		}
+
+		@media screen and (max-width: 480px) {
+			font-size: 25px;
+		}
 	}
-	.table {
-		width: 40%;
-		margin: auto;
-		align-items: center;
-		border: 2px solid red;
-	}
-	table {
-		// text-align: center;
-		// padding: 20px;
+	.skillContent {
+		display: flex;
+		flex-direction: row;
+		width: 90%;
+		max-width: 800px;
 		margin: auto;
 		// margin-top: 50px;
+		// border: 5px solid rgb(78, 78, 78);
+
+		h3 {
+			padding: 10px 0;
+		}
+		.column1 {
+			width: 200px;
+			// border: 5px solid red;
+			padding: 20px;
+			margin: auto;
+			margin-top: 0;
+		}
+		.column2 {
+			width: 200px;
+			padding: 20px;
+			margin: auto;
+			margin-top: 0;
+
+			// border: 5px solid red;
+		}
+		.column3 {
+			width: 200px;
+			padding: 20px;
+			margin: auto;
+			margin-top: 0;
+
+			// border: 5px solid red;
+		}
 	}
-	th {
-		// padding-top: 12px;
-		padding-bottom: 12px;
-		text-align: left;
-		// background-color: #04aa6d;
-		// color: white;
-		font-weight: 900;
-		width: 100px;
-	}
-	td,
-	th {
-		border: 1px solid #ddd;
-		padding: 3px 50px;
-		width: 1000px;
-	}
-	td {
-		font-weight: 100;
-	}
+
+	// h1 {
+	// 	text-align: center;
+	// }
+	// .table {
+	// 	// width: 40%;
+	// 	margin: auto;
+	// 	align-items: center;
+	// }
+	// table {
+	// 	// text-align: center;
+	// 	// padding: 20px;
+	// 	margin: auto;
+	// 	// margin-top: 50px;
+	// }
+	// th {
+	// 	// padding-top: 12px;
+	// 	padding-bottom: 12px;
+	// 	text-align: left;
+	// 	// background-color: #04aa6d;
+	// 	// color: white;
+	// 	font-weight: 900;
+	// 	width: 100px;
+	// }
+	// td,
+	// th {
+	// 	border: 1px solid #ddd;
+	// 	padding: 3px 50px;
+	// 	width: 1000px;
+	// }
+	// td {
+	// 	font-weight: 100;
+	// }
 }

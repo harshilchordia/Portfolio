@@ -11,6 +11,8 @@ import videofile_eyegaze from "../../Images/eyegazeWorking.mp4";
 
 import videofile_FDMexpense from "../../Images/FDM_expenseAPP.mp4";
 
+import Github from "../../Images/github.png";
+
 import { motion } from "framer-motion";
 
 const imageVariants = {
@@ -32,7 +34,14 @@ export const properties = [
 		Heading: "Wildfire research",
 		small_des:
 			"Worked as a research assistant at Earth Observation and Wildfire Research Group at King's College London.",
-		description: "Research assistant at a wildfire research group at King's College London",
+		description: (
+			<div>
+				<p>Research assistant at a wildfire research group at King's College London</p>
+				<a href="https://github.com/harshilchordia/Wildfire_Research" target="_blank">
+					<img src={Github} alt="" style={{ width: 50, paddingTop: "50px" }} />
+				</a>
+			</div>
+		),
 	},
 	{
 		id: 2,
@@ -48,8 +57,18 @@ export const properties = [
 		small_des:
 			"Eye Gaze detection keyboard allows you to type hands-free with the gaze of your eyes.\
 			Can also be used to monitor eye health while staring at screen for long periods.",
-		description:
-			"Developed an application for typing with eye gaze detection as final year project. Used Machine Learning face and eye detection models along with OpenCV, Dlib, and Tkinter libraries.",
+		description: (
+			<div>
+				<p>
+					Developed an application for typing with eye gaze detection as final year project. Used
+					Machine Learning face and eye detection models along with OpenCV, Dlib, and Tkinter
+					libraries.
+				</p>
+				<a href="https://github.com/harshilchordia/Eye-Gaze-Keyboard" target="_blank">
+					<img src={Github} alt="" style={{ width: 50, paddingTop: "50px" }} />
+				</a>
+			</div>
+		),
 	},
 	{
 		id: 3,
@@ -66,8 +85,17 @@ export const properties = [
 		small_des:
 			"React Framerwork responsive website used as a personal portfolio.\
 		Uses framer-motion animations and other libraries to create beautiful web app.",
-		description:
-			"Responsive Portfolio website to display my projects and experiences. Uses React framework with styled components and Framer Motion animations",
+		description: (
+			<div>
+				<p>
+					Responsive Portfolio website to display my projects and experiences. Uses React framework
+					with styled components and Framer Motion animations.
+				</p>
+				<a href="https://github.com/harshilchordia/React-Personal-Portfolio" target="_blank">
+					<img src={Github} alt="" style={{ width: 50, paddingTop: "50px" }} />
+				</a>
+			</div>
+		),
 	},
 	{
 		id: 4,
@@ -81,10 +109,15 @@ export const properties = [
 		),
 		Heading: "FDM Expense Claim App",
 		small_des:
-			"React Framerwork responsive website used as a personal portfolio.\
-		Uses framer-motion animations and other libraries to create beautiful web app.",
-		description:
-			"Responsive Portfolio website to display my projects and experiences. Uses React framework with styled components and Framer Motion animations",
+			"Work expense claim app built with react and firebase built for FDM employees at University.",
+		description: (
+			<div>
+				<p>add a description</p>
+				<a href="https://github.com/harshilchordia/Expense-App-FDM" target="_blank">
+					<img src={Github} alt="" style={{ width: 50, paddingTop: "50px" }} />
+				</a>
+			</div>
+		),
 	},
 	{
 		id: 5,
@@ -98,10 +131,14 @@ export const properties = [
 			/>
 		),
 		Heading: "Weather Happy Dog",
-		small_des:
-			"React Framerwork responsive website used as a personal portfolio.\
-		Uses framer-motion animations and other libraries to create beautiful web app.",
-		description:
-			"Responsive Portfolio website to display my projects and experiences. Uses React framework with styled components and Framer Motion animations",
+		small_des: "Weather App for dog walking built for mobile phones on React. ",
+		description: (
+			<div>
+				<p>add a description</p>
+				<a href="https://github.com/harshilchordia/Weather_happy_dog" target="_blank">
+					<img src={Github} alt="" style={{ width: 50, paddingTop: "50px" }} />
+				</a>
+			</div>
+		),
 	},
 ];
