@@ -68,7 +68,7 @@ const Home = () => {
 			<Projects />
 
 			<Contact />
-			<footer>Icon made by Pixel perfect from www.flaticon.com</footer>
+			<footer>Icon from www.flaticon.com</footer>
 		</>
 	);
 };

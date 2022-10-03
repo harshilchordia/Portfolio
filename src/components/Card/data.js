@@ -112,7 +112,13 @@ export const properties = [
 			"Work expense claim app built with react and firebase built for FDM employees at University.",
 		description: (
 			<div>
-				<p>add a description</p>
+				<p>
+					add a description <br />
+					<br />
+					<br />
+					<br />
+					<a href="https://fdmexpenseapp.web.app/">fdmexpenseapp.web.app</a>
+				</p>
 				<a href="https://github.com/harshilchordia/Expense-App-FDM" target="_blank">
 					<img src={Github} alt="" style={{ width: 50, paddingTop: "50px" }} />
 				</a>
@@ -134,7 +140,10 @@ export const properties = [
 		small_des: "Weather App for dog walking built for mobile phones on React. ",
 		description: (
 			<div>
-				<p>add a description</p>
+				<p>
+					add a description <br />
+					<br /> <a href="https://weatherhappydog.web.app/">weatherhappydog.web.app</a>
+				</p>
 				<a href="https://github.com/harshilchordia/Weather_happy_dog" target="_blank">
 					<img src={Github} alt="" style={{ width: 50, paddingTop: "50px" }} />
 				</a>
