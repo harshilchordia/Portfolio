@@ -29,8 +29,8 @@
 		}
 	}
 	.skillContent {
-		display: flex;
-		flex-direction: row;
+		// display: flex;
+		// flex-direction: row;
 		width: 90%;
 		max-width: 800px;
 		margin: auto;
@@ -65,15 +65,25 @@
 		}
 	}
 
+	.tab_container {
+		// border: 5px solid green;
+		padding: 10px;
+	}
 	.titles {
-		display: inline-flex;
-		padding: 20px;
-		// border: 5px solid red;
+		// display: inline-flex;
+		// padding: 20px;
+		float: left;
+		// border: 5px solid yellow;
 	}
 	.textPanel {
-		display: inline-flex;
+		float: left;
+		margin-left: 25px;
+		// display: inline-flex;
+		// margin: 50px;
+		// border: 5px solid red;
 	}
 	p {
-		padding: 10px;
+		padding-bottom: 20px;
+		padding-top: 0;
 	}
 }
