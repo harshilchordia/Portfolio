@@ -66,7 +66,6 @@ const Home = () => {
 			<HeroSection />
 			<Skills />
 			<Projects />
-
 			<Contact />
 			<footer>Icon from www.flaticon.com</footer>
 		</>

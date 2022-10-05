@@ -1,9 +1,10 @@
 {
   "projects": {
-    "default": "byharshil",
+    "default": "findharshil",
     "harshilstaging": "builtbyharshil",
     "staging": "builtbyharshil",
-    "byharshil-staging": "byharshil"
+    "byharshil-staging": "byharshil",
+    "socials": "findharshil"
   },
   "targets": {},
   "etags": {}
